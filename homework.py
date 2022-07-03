@@ -115,9 +115,9 @@ class SportsWalking(Training):
 
 class Swimming(Training):
     """Тренировка: плавание."""
-    LEN_STEP = 1.38
-    coeff_calorie_1 = 1.1
-    coeff_calorie_2 = 2
+    LEN_STEP: float = 1.38
+    coeff_calorie_1: float = 1.1
+    coeff_calorie_2: int = 2
 
     def __init__(self,
                  action: int,
@@ -154,7 +154,7 @@ def read_package(workout_type: str, data: list) -> Training:
     if workout_type in name_training:
         return name_training[workout_type](*data)
     else:
-        raise ValueError("Тренировка не найдена")
+        raise ValueError('Тренировка не найдена')
 
 
 def main(training: Training) -> None:
