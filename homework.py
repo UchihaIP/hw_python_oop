@@ -74,7 +74,7 @@ class Running(Training):
 
 class SportsWalking(Training):
     """Тренировка: спортивная ходьба."""
-    walk_coeff_cal_1: float = 0.035  # Поменять имена переменных
+    walk_coeff_cal_1: float = 0.035
     walk_coeff_cal_2: float = 0.029
 
     def __init__(self,
